@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname + '/index.html'))
+    res.sendFile(path.join(__dirname + '/public/index.html'))
     // console.log(movies)
 })
 app.get('/api/v1', (req, res) => {
